@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">admin</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/katchaka2</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Genre" />
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Interet" />
+		<mapping
+			class="fr.orsys.kingsley.katchaka2.business.Invitation" />
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Message" />
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Personne" />
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Statut" />
+		<mapping
+			class="fr.orsys.kingsley.katchaka2.business.VieCommune" />
+		<mapping class="fr.orsys.kingsley.katchaka2.business.Ville" />
+	</session-factory>
+</hibernate-configuration>
